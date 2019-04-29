@@ -1,1 +1,8 @@
+.header {
+  display: flex;
+}
 
+.header img {
+  margin-right: 12px;
+  margin-left: 20px;
+}
