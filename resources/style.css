@@ -1,8 +1,30 @@
 .header {
   display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: center;
+  border-bottom: solid black 1px;
 }
 
 .header img {
   margin-right: 12px;
   margin-left: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: MediumAquamarine;
+  width: 700px;
+}
+
+.logo span {
+  font-size: 17px;
+}
+
+.header span {
+  display: inline-block;
+  font-size: 17px;
+  padding: 20px 10px;
 }
