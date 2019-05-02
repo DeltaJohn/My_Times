@@ -1,9 +1,45 @@
+/* Universal Styles */
+
+body {
+  margin: 0;
+  font-family: "Georgia", serif;
+  font-size: 17px;
+  color: black;
+}
+
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.image_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 300px;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+
 .header {
   display: flex;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 80px;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   align-items: center;
+  background-color: white;
   border-bottom: solid black 1px;
 }
 
@@ -19,12 +55,156 @@
   width: 700px;
 }
 
-.logo span {
-  font-size: 17px;
+a {
+  color: black;
 }
+
+
+
 
 .header span {
   display: inline-block;
   font-size: 17px;
   padding: 20px 10px;
+}
+
+
+
+/* Main Content */
+
+.container {
+  display: flex;
+  width: 1232px;
+  margin: 0 auto 78px auto;
+  padding-top: 116px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.medium {
+  display: flex;
+  flex-direction: column;
+  margin-right: 32px;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
+
+
+.main_story .image_content {
+  background-image: url("./img-story-main.png");
+  width: 630px;
+  margin-top: 0;
+  text-align: left;
+  font-size: 40px;
+}
+
+.main_story .image_content span {
+  margin-left: 20px;
+}
+
+.stories {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+}
+
+.stories.text_content {
+  height: 250px;
+}
+
+.narrative {
+  margin-top: 16px;
+}
+
+.story {
+  display: flex;
+  flex-direction:column;
+  width: 300px;
+}
+
+.fall_scene {
+  background-image: url("./img-story-2.png");
+}
+
+.camera_scene {
+  background-image: url("./img-story-3.png");
+}
+
+.girl_cat {
+  background-image: url("./img-story-1.png");
+}
+
+
+/* Third Column */
+
+.news-bites span {
+  display: flex;
+  flex-direction: column;
+  padding: 11px 20px;
+  border-bottom: solid black 1px;
+  background-color: WhiteSmoke;
+  font-family: Verdana;
+  font-size: 12px;
+  color: DimGray;
+
+}
+
+.column.small img {
+  height: 240px;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 41px;
+}
+
+/* Footer */
+.line_one {
+  display: flex;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  height: 325px;
+  width: 100%;
+}
+
+.title {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  padding-right: 25px;
+  border-right: solid white 2px;
+}
+
+.line_one nav {
+  padding-left: 25px;
+}
+
+.line_one nav span {
+  padding-left: 25px;
 }
